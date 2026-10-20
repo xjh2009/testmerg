@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "signaling": {
+    "type": "eagler-relay",
+    "relayUrl": "wss://relay.lax1dude.net/minecraft",
+    "iceServers": [
+      {
+        "urls": "stun:stun.l.google.com:19302"
+      }
+    ],
+    "relay": {
+      "enabled": true,
+      "maxDownstream": 2
+    }
+  },
+  "assets": {
+    "client": {
+      "url": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/classes.wasm.br",
+      "encoding": "br",
+      "fallback": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/classes.wasm"
+    },
+    "mesh": {
+      "url": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/mesh-worker.wasm.br",
+      "encoding": "br",
+      "fallback": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/mesh-worker.wasm"
+    },
+    "runtime": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/classes.wasm-runtime.js",
+    "packs": [
+      {
+        "url": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/assets.epk.br",
+        "encoding": "br",
+        "fallback": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/assets.epk",
+        "path": ""
+      },
+      {
+        "url": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/sounds.epk.br",
+        "encoding": "br",
+        "fallback": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/sounds.epk",
+        "path": ""
+      }
+    ],
+    "locales": "https://modelscope.cn/datasets/XJHya233/mltest/resolve/master/lang/"
+  }
+}
